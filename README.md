@@ -1,7 +1,14 @@
-My personal site
+# Chris Isler
 
-### todo
-- make Header not `position: 'fixed'`
-- see `leo.im` website. make individual blog post views have a 'Back' button and not show the header.
-- when array of blogTitles are recieved in BlogView.js, sort the objects by creationDate.
-- make a `titleCase` function for the blog titles
+This repository contains the source code for my personal website, [`chrisisler.now.sh`](chrisisler.now.sh).
+
+## Get in touch
+christopherisler1@gmail.com
+Twitter: @chrisisler
+
+## To do
+- section diagonal/svg prettiness
+- each `page` row fades in on viewscroll in view
+
+## Reading
+https://codepen.io/lukeyphills/pen/FjygE?editors=1100

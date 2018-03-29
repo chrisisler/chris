@@ -1,0 +1,183 @@
+/* Someone smart said this was a good idea. */
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 0.7px;
+}
+
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+} .page:nth-child(odd) {
+  background-color: #eff1fc;
+  align-items: flex-end;
+}
+.chris-bg {
+}
+.page-fit-content {
+  height: fit-content;
+}
+
+
+section.chris-bg {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(assets/me2.jpg);
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+section#about {
+  color: #ddd;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(assets/me2.jpg);
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+button.code-btn {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+  border: 1px solid #7db9e8;
+  background-color: transparent;
+  /* background: #1e5799; /1* Old browsers *1/ */
+  /* background: -moz-linear-gradient(45deg, #1e5799 0%, #7db9e8 100%); /1* FF3.6-15 *1/ */
+  /* background: -webkit-linear-gradient(45deg, #1e5799 0%,#7db9e8 100%); /1* Chrome10-25,Safari5.1-6 *1/ */
+  /* background: linear-gradient(45deg, #1e5799 0%,#7db9e8 100%); /1* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *1/ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1  ); /1* IE6-9 fallback on horizontal gradient *1/ */
+  /* border: none; */
+  /* width: fit-content; */
+  /* margin: 8px 0; */
+  margin: 32px 0;
+} button.code-btn a {
+  padding: 24px;
+  outline: none;
+  /* color: #777; */
+  color: #7db9e8;
+  /* font-size: smaller; */
+  /* remove underline on hover */
+  text-decoration: none;
+}
+
+
+a {
+  color: inherit;
+} a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.page-title {
+  text-shadow: 4px 4px 2px rgba(150, 150, 164, 0.2);
+}
+
+
+/* css-tricks.com/centering-css-complete-guide/#vertical-inline-multiple */
+.custom-center {
+  /* slightly nudge right */
+  position: absolute;
+  top: -5%;
+  left: 20%;
+  display: table;
+  height: 100%;
+} .custom-center h1,h6 {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+}
+
+
+h1#name {
+  color: #bbb;
+  animation: title-transition 1s;
+} h1#name-last {
+  padding: 16px;
+  color: #ddd;
+  font-weight: lighter;
+  animation: title-transition 1.5s;
+  text-shadow: 4px 4px 2px rgba(150, 150, 164, 0.1);
+}
+
+
+.vertical-align {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#line-separator {
+  font: inherit;
+  position: absolute;
+  left: 2%;
+  bottom: 43%;
+  height: 1px;
+  width: 300px;
+  /* border-bottom: 2px solid #7db9e8; */
+
+  /* opacity: 0; */
+  /* animation: separator-transition 1s; */
+  /* animation-delay: 2s; */
+  /* animation-fill-mode: forwards; */
+}
+/* @keyframes separator-transition { */
+/*   0% { */
+/*     opacity: 0; */
+/*     /1* transform: translateX(-5%); *1/ */
+/*   } */
+/*   100% { */
+/*     opacity: 1; */
+/*     /1* transform: translateX(0%); *1/ */
+/*   } */
+/* } */
+
+
+/* @see css-tricks.com/snippets/css/keyframe-animation-syntax */
+@keyframes title-transition {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+.app-img {
+  /* width: 60%; */
+  /* height: auto; */
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.app-link {
+  cursor: pointer;
+}
+
+
+.chips-code-wrap {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09);
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#resume-link {
+  padding: 8px 24px;
+  border: 1px solid #555;
+  border-radius: 3px;
+} #resume-link:hover {
+  border-color: #999;
+}

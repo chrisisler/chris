@@ -1,10 +1,153 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Chris Isler</title>
-    </head>
-    <body>
-    </body>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='./style.css' />
+    <title>Chris Isler</title>
+  </head>
+  <body>
+
+    <section class='page chris-bg'>
+      <div class='custom-center'>
+        <h1 id='name' class='display-2'>
+          Chris
+        </h1>
+        <h1 id='name-last' class='display-2'>
+          Isler
+        </h1>
+        <h6 class='font-weight-light text-muted' id='line-separator'>
+          Developer. Musician. Athlete.
+        </h6>
+      </div>
+    </section>
+
+    <section class='page'>
+      <main class='container  vertical-align'>
+        <div class='row'>
+
+          <div class='col'>
+            <h1 class='display-4'>
+              <a class='page-title' target='_blank' href='https://sw-resources.now.sh'>Star Wars Resources</a>
+            </h1>
+            <br>
+            <h3 class='font-weight-light'>
+              Progressive web app built using modern front end tools.
+            </h3>
+            <h5 class='text-muted font-weight-light'>
+              Powered by Preact, webpack, service workers, and a lot of googling.
+            </h5>
+            <button class='code-btn btn'>
+              <a target='_blank' href='https://github.com/chrisisler/swapi-preact-sw/tree/master/src'>
+                Read the code
+              </a>
+            </button>
+          </div>
+
+          <div class='col-lg-8 col-md-12 app-link'>
+            <a href='https://sw-resources.now.sh'>
+              <img class='app-img rounded float-right img-fluid' src='assets/sw-resources-app.png' alt='awesome star wars web app'>
+            </a>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+    <section class='page'>
+      <main class='container  vertical-align'>
+        <div class='row'>
+
+          <div class='col-lg-8 col-md-12 app-link'>
+            <a href='https://github.com/chrisisler/wavematch'>
+              <img class='app-img rounded float-right img-fluid' src='assets/wavematch.png' alt='pattern matching in javascript'>
+            </a>
+          </div>
+
+          <div class='col'>
+            <br>
+            <h1 class='display-4'>
+              <a class='page-title' target='_blank' href='https://github.com/chrisisler/wavematch'>Wavematch</a>
+            </h1>
+            <h3 class='font-weight-light'>
+              JavaScript's missing controw flow, pattern matching.
+            </h3>
+            <h5 class='text-muted font-weight-light'>
+              Compare input data against patterns and execute code based on those matches.
+            </h5>
+            <button class='code-btn btn'>
+              <a target='_blank' href='https://github.com/chrisisler/wavematch/tree/master/src'>
+                Read the code
+              </a>
+            </button>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+
+    <section class='page'>
+      <main class='container  vertical-align'>
+        <div class='row'>
+
+          <div class='col-12 text-center'>
+            <h1 class='display-4'>
+              <a class='page-title' target='_blank' href='https://github.com/chrisisler/chips'>Chips</a>
+            </h1>
+            <h3 class='font-weight-light'>
+              JavaScript library for functional programming.
+            </h3>
+            <button class='code-btn btn'>
+              <a target='_blank' href='https://github.com/chrisisler/chips/blob/master/API.md'>
+                Read the docs
+              </a>
+            </button>
+          </div>
+
+          <div class='col-12'>
+            <script src='https://embed.runkit.com' data-element-id='chips-code'></script>
+            <div id='chips-code' class='chips-code-wrap'>
+              const C = require('chips')
+
+              const smoosh = array => C.reduce(C.concat, [], array)
+              smoosh([ 1, 2, [ 3 ] ])
+              // => [ 1, 2, 3 ]
+
+              const flatSum = C.pipe(smoosh, C.reduce((a, b) => a + b, 0))
+              flatSum([ 1, 3, [ 5 ] ])
+              // => 9
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+
+    <section class='page' id='about'>
+      <main class='container  vertical-align'>
+      <h1 class='display-3'>
+        <strong>About</strong>
+      </h1>
+      <h4 class='font-weight-light'>
+        <br>
+        I enjoy programming, working out, and solving rubik's cubes.
+        <br>
+        When I'm not at the computer, I love skateboarding, writing music, and settling in with a solid book.
+        <br>
+        <br>
+        <em>Looking for work in the JavaScript world!</em>
+      </h4>
+      <br>
+      <h5 class='font-weight-light' style='color: white;'>
+        <a id='resume-link' target='_blank' href='https://drive.google.com/file/d/1tCFxyysdpXi2hku_4ZgpCD_Bnb5F9vCP/view?usp=sharing'>
+          Resume
+        </a>
+      </h5>
+      </main>
+    </section>
+
+  </body>
 </html>
