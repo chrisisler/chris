@@ -45,8 +45,13 @@ section#about {
 }
 
 
+.btn:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+
 button.code-btn {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
   border: 1px solid #7db9e8;
   background-color: transparent;
@@ -80,6 +85,8 @@ a {
 
 .page-title {
   text-shadow: 4px 4px 2px rgba(150, 150, 164, 0.2);
+} .page-title:hover {
+  text-decoration: underline;
 }
 
 
@@ -100,15 +107,21 @@ a {
 
 h1#name {
   color: #bbb;
+
+  /* opacity: 0; */
   animation: title-transition 1s;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
+  /* animation-fill-mode: forwards; */
 } h1#name-last {
   padding: 16px;
   color: #ddd;
   font-weight: lighter;
-  animation: title-transition 1.5s;
-  animation-delay: 1s;
   text-shadow: 4px 4px 2px rgba(150, 150, 164, 0.1);
+
+  /* opacity: 0; */
+  animation: title-transition 3s;
+  /* animation-delay: 1s; */
+  /* animation-fill-mode: forwards; */
 }
 
 
@@ -178,9 +191,9 @@ h1#name {
 
 
 #resume-link {
-  padding: 8px 24px;
-  border: 1px solid #555;
-  border-radius: 3px;
+  padding: 8px 32px;
+  border: 2px solid #555;
+  border-radius: 2px;
 } #resume-link:hover {
   border-color: #999;
 }
